@@ -14,6 +14,7 @@ class CounterViewModel: ObservableObject {
     
     var value: Int {
         counter.value
+        
     }
     
     var premium: Bool {
