@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		995E32EA27EAE97000D28BEF /* MVVM_CounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E32E927EAE97000D28BEF /* MVVM_CounterApp.swift */; };
-		995E32EC27EAE97000D28BEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E32EB27EAE97000D28BEF /* ContentView.swift */; };
 		995E32EE27EAE97200D28BEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 995E32ED27EAE97200D28BEF /* Assets.xcassets */; };
 		995E32F127EAE97200D28BEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 995E32F027EAE97200D28BEF /* Preview Assets.xcassets */; };
+		995E32FB27EAEAB800D28BEF /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E32FA27EAEAB800D28BEF /* Counter.swift */; };
+		995E32FD27EAEBFB00D28BEF /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E32FC27EAEBFB00D28BEF /* CounterViewModel.swift */; };
+		995E32FF27EAEE8100D28BEF /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995E32FE27EAEE8100D28BEF /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		995E32E627EAE97000D28BEF /* MVVM_Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		995E32E927EAE97000D28BEF /* MVVM_CounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_CounterApp.swift; sourceTree = "<group>"; };
-		995E32EB27EAE97000D28BEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		995E32ED27EAE97200D28BEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		995E32F027EAE97200D28BEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		995E32FA27EAEAB800D28BEF /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		995E32FC27EAEBFB00D28BEF /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
+		995E32FE27EAEE8100D28BEF /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				995E32E927EAE97000D28BEF /* MVVM_CounterApp.swift */,
-				995E32EB27EAE97000D28BEF /* ContentView.swift */,
+				995E32F827EAEA7B00D28BEF /* Model */,
+				995E32F727EAEA7500D28BEF /* View */,
+				995E32F927EAEA8300D28BEF /* ViewModel */,
 				995E32ED27EAE97200D28BEF /* Assets.xcassets */,
 				995E32EF27EAE97200D28BEF /* Preview Content */,
 			);
@@ -65,6 +71,30 @@
 				995E32F027EAE97200D28BEF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		995E32F727EAEA7500D28BEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				995E32FE27EAEE8100D28BEF /* CounterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		995E32F827EAEA7B00D28BEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				995E32FA27EAEAB800D28BEF /* Counter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		995E32F927EAEA8300D28BEF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				995E32FC27EAEBFB00D28BEF /* CounterViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				995E32EC27EAE97000D28BEF /* ContentView.swift in Sources */,
+				995E32FD27EAEBFB00D28BEF /* CounterViewModel.swift in Sources */,
 				995E32EA27EAE97000D28BEF /* MVVM_CounterApp.swift in Sources */,
+				995E32FB27EAEAB800D28BEF /* Counter.swift in Sources */,
+				995E32FF27EAEE8100D28BEF /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
